@@ -9,6 +9,12 @@ The app simulates a virtual Ping Pong game with two random player competing base
 2. Install the required packages ```npm install```
 3. Run the server ```node server```
 
+## Example ##
+
+An [example](https://github.com/arbazsiddiqui/Ping-Pong-Game/blob/master/Example.md) of the simulation has been provided
+
+***
+
 ### APIS ###
 
 ### Player ###
