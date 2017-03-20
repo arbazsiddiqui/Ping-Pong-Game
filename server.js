@@ -21,10 +21,10 @@ app.use(bodyParser.json({type: 'application/vnd.api+json'})); // parse applicati
 app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-Method-Override header in the request
 app.use(cookieParser());
 
-var refree = require('./app/controllers/refreeController');
+var refree = require('./app/controllers/gameController');
 
 // routes ======================================================================
-app.use('/refree', refree);
+app.use('/', refree);
 
 // listen (start app with node server.js) ======================================
 app.listen(port);
