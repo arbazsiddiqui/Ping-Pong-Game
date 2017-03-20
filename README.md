@@ -11,7 +11,7 @@ The app simulates a virtual Ping Pong game with two random player competing base
 
 ### APIS ###
 
-#### Player ####
+### Player ###
 
 **URL**
 
