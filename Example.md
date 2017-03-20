@@ -195,7 +195,7 @@ Play match 4
 }
 ```
 
-##### Ask refree to draw matches among for the semifinals #####
+##### Ask refree to draw matches for the semifinals among the winners of quater#####
 
 ```http://localhost:8080/refree/draw```
 
@@ -254,7 +254,7 @@ Play match 6
 }
 ```
 
-Ask refree to draw the finals
+##### Ask refree to draw the finals #####
 
 ```http://localhost:8080/refree/draw```
 
