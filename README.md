@@ -13,6 +13,10 @@ The app simulates a virtual Ping Pong game with two random player competing base
 
 ### Player ###
 
+**USE**
+
+To join a player in the game
+
 **URL**
 
 ```/player/join/:id```
@@ -33,6 +37,11 @@ The app simulates a virtual Ping Pong game with two random player competing base
    "message": "Successfully joined the game"
 }
 ```
+***
+
+**USE**
+
+To play match
 
 **URL**
 
@@ -57,8 +66,13 @@ Object of winner of the match
    "length": 8
 }
 ```
+***
 
 ### Refree ###
+
+**USE**
+
+To draw matches among legal players
 
 **URL**
 
@@ -128,7 +142,13 @@ An array containg randomly drawn matches among the legal players
   }
 ]
 ```
- 
+***
+
+**USE**
+
+To generate the report after tournament
+
+
 **URL**
 
 ```/refree/report```
