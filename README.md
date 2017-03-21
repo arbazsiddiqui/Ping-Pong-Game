@@ -51,25 +51,26 @@ To play match
 
 **URL**
 
-```/player/match/:matchId```
+```/player/match/```
 
 **Method:**
 
-`GET`
+`POST`
 
-**URL Params**
+**Data Params**
 
 `matchId=[integer]`
+`offensiveMove=[integer]`
 
 **Response:**
 
-Object of winner of the match
+Object of winner of the turn or match
 
 ```javascript
 {
-   "id": 2,
-   "name": "Nick",
-   "length": 8
+  "turnWinner": "Nick",
+  "Pritam": 3,
+  "Nick": 4
 }
 ```
 ***
