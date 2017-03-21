@@ -98,9 +98,9 @@ router.post('/player/match', function (req, res) {
         temp.match = matches[k].player1.name + " vs " + matches[k].player2.name;
         temp.winner = winner.name;
         report.push(temp); //log the match for reporting later
-        matches[k].status = "Game Over";
+        matches[k].status = "Match Over";
         matchOver = 0;
-        return res.status(200).send("Game won by " + winner.name);
+        return res.status(200).send("Match won by " + winner.name);
       }
       turnData = {};
       turnData.turnWinner = winner.name;
@@ -109,8 +109,8 @@ router.post('/player/match', function (req, res) {
       return res.status(200).send(turnData);
     }
       //check if the match has already been played
-    else if (matches[k].matchId == matchId && matches[k].status == "Game Over")
-      return res.status(400).send("Game already played");
+    else if (matches[k].matchId == matchId && matches[k].status == "Match Over")
+      return res.status(400).send("Match already played");
   }
   return res.status(400).send("Match Does not exist");
 });
